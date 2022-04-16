@@ -6,17 +6,26 @@
         content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="css/main.css">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"/>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"/>
         <title>Portfolio</title>
     </head>
-    <!-- www.linkedin.com/in/qurooj -->
     <body>
         <!-- Navbar -->
         <nav class="relative container mx-auto p-6">
             <!-- Flex Container -->
             <div class="flex items-center justify-between">
                 <!-- Profile Pic -->
-                <div class="pt-2">
-                    <img src="" alt="Profile Pic Will Go here">
+                <div class="pt-2 w-12 rounded-full">
+                    <img src="img/profile_pic.jpg" alt="Profile Pic Will Go her" 
+                    class="rounded-full object-contain hover:object-scale-down drop-shadow-md">
                 </div>
                 <!-- Menu Items -->
                 <div class="hidden md:flex flex space-x-10">
@@ -33,16 +42,7 @@
                     </div>
                 </div>
 
-                <!-- Button -->
-                <a   
-                    href="https://github.com/thelittleone1" 
-                    class="hidden md:flex p-3 px-6 text-white
-                    bg-brightRed rounded 
-                    baseline hover:bg-brightRedLight">
-                    <i class='fa fa-github'></i>
-                </a>
-
-                   <!-- Mobile Menu -->
+                <!-- Mobile Menu -->
                 <div class="md:hidden">
                     <div id="menu" class="absolute flex-col items-center hidden self-end hidden 
                     py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 
@@ -87,150 +87,165 @@
             </div>
         </section>
 
-        <!-- Project Section -->
-        <section id="projects">
-            <!-- Flex Container -->
-            <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
-                    <!-- Projects on the Left -->
-                    <div class="flex flex-col space-y-12 md:w-1/2">
-                        <h2 id="my_projects" 
-                        class="max-w-md text-3xl font-bold text-center md:text-left my-12">
-                            My Projects
-                        </h2>
-                    </div>
-
-                    <div
-                    id="carouselExampleCrossfade"
-                    class="carousel slide carousel-fade relative"
-                    data-bs-ride="carousel">
-                    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex 
-                    justify-center p-0 mb-4">
-                        <button
-                        type="button"
-                        data-bs-target="#carouselExampleCrossfade"
-                        data-bs-slide-to="0"
-                        class="active"
-                        aria-current="true"
-                        aria-label="Slide 1">
-                        </button>
-                        <button
-                        type="button"
-                        data-bs-target="#carouselExampleCrossfade"
-                        data-bs-slide-to="1"
-                        aria-label="Slide 2">
-                        </button>
-                        <button
-                        type="button"
-                        data-bs-target="#carouselExampleCrossfade"
-                        data-bs-slide-to="2"
-                        aria-label="Slide 3">
-                        </button>
-                    </div>
-                        <!-- Main Project -->
-                        <div class="carousel-inner relative w-full overflow-hidden">
-                            <div class="carousel-item active w-full">
-                                <a href="https://pillifino.github.io/movie-ish" target="_blank">
-                                    <div class="opacity-100 hover:opacity-50">
-                                        <img
-                                        src="img/movie-ish.png" class="max-w-sm"
-                                        class="block w-full"
-                                        alt="Movie-Ish Project"/>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- Code Quiz -->
-                            <div class="carousel-item active w-full">
-                                <a href="https://thelittleone1.github.io/code_quiz/" target="_blank">
-                                    <div class="opacity-100 hover:opacity-50">
-                                        <img
-                                        src="img/code_quiz.png" class="max-w-sm"
-                                        class="block w-full"
-                                        alt="Code Quiz"/>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- Weather Widget -->
-                            <div class="carousel-item active w-full">
-                                <a href="https://thelittleone1.github.io/weather_dashboard/" target="_blank">
-                                    <div class="opacity-100 hover:opacity-50">
-                                        <img
-                                        src="img/weather_dashboard.png" class="max-w-sm"
-                                        class="block w-full"
-                                        alt="Weather Dashboard"/>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <button
-                            class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
-                            type="button"
-                            data-bs-target="#carouselExampleCrossfade"
-                            data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button
-                            class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
-                            type="button"
-                            data-bs-target="#carouselExampleCrossfade"
-                            data-bs-slide="next">
-                                <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                                </button>
-                                    </div>
-                        <!-- Main Project Images --> 
-                        <!-- <div class="opacity-100 hover:opacity-50">
-                            <a href="https://pillifino.github.io/movie-ish" target="_blank">
-                                <img src="img/movie-ish.png" class="max-w-sm">
-                            </a>
-                        </div> -->
-
-                        <!-- Side HW Projects (To Be Replaced)
-                        <div class="opacity-100 hover:opacity-50">
-                            <a href="https://thelittleone1.github.io/code_quiz/" target="_blank">
-                                <img src="img/code_quiz.png" class="max-w-sm">
-                            </a>
-                        </div>
-                        <div class="opacity-100 hover:opacity-50">
-                            <a href="https://thelittleone1.github.io/weather_dashboard/" target="_blank">
-                                <img src="img/weather_dashboard.png" class="max-w-sm">
-                            </a>
-                        </div> -->
-                    
-                    
+        <section id="projects" class="my-10">
+            <div
+              class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row"
+            >
+              <div class="flex flex-col space-y-12 md:w-1/2">
+                <h2
+                  id="my_projects"
+                  class="max-w-md text-3xl font-bold text-center md:text-left my-12"
+                >
+                  My Projects
+                </h2>
+              </div>
+              <div
+                id="carouselDarkVariant"
+                class="carousel carousel-fade carousel-dark relative"
+                data-bs-ride="carousel"
+              >
+                <!-- Indicators -->
+                <div
+                  class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4"
+                >
+                  <button
+                    data-bs-target="#carouselDarkVariant"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    data-bs-target="#carouselDarkVariant"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    data-bs-target="#carouselDarkVariant"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 1"
+                  ></button>
+                </div>
+                <!-- Inner -->
+                <div class="carousel-inner relative w-full overflow-hidden">
+                  <!-- Single item -->
+                  <div class="carousel-item active relative float-left w-full">
+                    <a href="https://pillifino.github.io/movie-ish" target="_blank">
+                      <div class="opacity-100 hover:opacity-50">
+                        <img
+                          src="img/movie-ish.png"
+                          class="max-w-lg"
+                          class="block w-full"
+                          alt="Movie-Ish Project"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <!-- Single item -->
+                  <div class="carousel-item relative float-left w-full">
+                    <a
+                      href="https://thelittleone1.github.io/code_quiz/"
+                      target="_blank"
+                    >
+                      <div class="opacity-100 hover:opacity-50">
+                        <img
+                          src="img/code_quiz.png"
+                          class="max-w-lg"
+                          class="block w-full"
+                          alt="Code Quiz"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <!-- Single item -->
+                  <div class="carousel-item relative float-left w-full">
+                    <a
+                      href="https://thelittleone1.github.io/weather_dashboard/"
+                      target="_blank"
+                    >
+                      <div class="opacity-100 hover:opacity-50">
+                        <img
+                          src="img/weather_dashboard.png"
+                          class="max-w-lg"
+                          class="block w-full"
+                          alt="Weather Dashboard"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- Inner -->
+                <!-- Controls -->
+                <button
+                  class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                  type="button"
+                  data-bs-target="#carouselDarkVariant"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon inline-block bg-no-repeat"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                  type="button"
+                  data-bs-target="#carouselDarkVariant"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon inline-block bg-no-repeat"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
-        </section>
+          </section>
+
 
         <!-- Footer -->
-        <footer class="bg-veryDarkBlue">
+        <footer class="bg-brightRedSupLight">
             <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 
             md:flex-row md:space-y-0">
 
-                <div class = "flex flex-col-reverse items-center justify-between space-y-12    
-                          md:flex-col md:space-y-0 md:items-start">
+                <div 
+                    id="contact_info"
+                    class = "flex flex-col-reverse items-center justify-between space-y-12    
+                    md:flex-col md:space-y-0 md:items-start">
+                    <h3 
+                        class="text-white text-2xl rounded bg-brightRed">
+                        Contact Me!
+                    </h3>
+                </div>
                 
                     <!-- Social Links Container -->
-                    <div class="flex justify-center space-x-10 max-w-sm">
-                        <!-- Link 1 Github -->
-                        <a href="https://github.com/thelittleone1?tab=repositories">
-                            <img src="img/github_icon.png">
-                        </a>
+                    <div class="flex flex-col-reverse justify-between space-y-12
+                    md:flex-col md:space-y-0 md:items-sort">
+                        <div class="flex justify-center space-x-10 max-w-sm">
+                            <a   
+                                href="https://github.com/thelittleone1">
+                                <img src="img/github_icon2.png" class="hover:bg-brightRedLight w-10">
+                            </a>
                 
-                        <!-- Link 2 Linkedin -->
-                        <a href="www.linkedin.com/in/qurooj">
-                            <img src="img/linkedin_icon.png">
-                        </a>
-                
-                        <!-- Link 3 Resume -->
-                        <a href="#">
-                            <img src="img/resume2.jpg">
-                        </a>
-                
+                                <!-- Link 2 Linkedin -->
+                                <a href="https://www.linkedin.com/in/qurooj/">
+                                    <img src="img/linkedin_icon.png" class="hover:bg-brightRedLight w-10">
+                                </a>
+                 
+                                <!-- <Link 3 Resume  -->
+                                <a href="assets/ResumeV9.pdf">
+                                    <img src="img/resume_icon.png" class="hover:bg-brightRedLight w-10">
+                                 </a>  
+                            </div>
+                        
                     </div>
-                </div>
-            </div>>
+
+            </div>
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
     </body>
 
 </html>
