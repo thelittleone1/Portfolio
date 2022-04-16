@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" 
+        content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+        <title>Portfolio</title>
+    </head>
+    <!-- www.linkedin.com/in/qurooj -->
+    <body>
+        <!-- Navbar -->
+        <nav class="relative container mx-auto p-6">
+            <!-- Flex Container -->
+            <div class="flex items-center justify-between">
+                <!-- Profile Pic -->
+                <div class="pt-2">
+                    <img src="" alt="Profile Pic Will Go here">
+                </div>
+                <!-- Menu Items -->
+                <div class="hidden md:flex flex space-x-10">
+                    <div class="rounded bg-brightRed text-white">
+                    <a href="#about_me" class="hover:text-darkGrayishBlue">About Me</a>
+                    </div>
+
+                    <div class="rounded bg-brightRed text-white">
+                        <a href="#my_projects" class="hover:text-darkGrayishBlue">My Projects</a>
+                    </div>
+
+                    <div class="rounded bg-brightRed text-white">
+                        <a href="#contact_info" class="hover:text-darkGrayishBlue">Contact Me</a>
+                    </div>
+                </div>
+
+                <!-- Button -->
+                <a   
+                    href="https://github.com/thelittleone1" 
+                    class="hidden md:flex p-3 px-6 text-white
+                    bg-brightRed rounded 
+                    baseline hover:bg-brightRedLight">
+                    <i class='fa fa-github'></i>
+                </a>
+
+                   <!-- Mobile Menu -->
+                <div class="md:hidden">
+                    <div id="menu" class="absolute flex-col items-center hidden self-end hidden 
+                    py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 
+                    right-6 drop-shadow-md">
+                        <div class="rounded bg-brightRed text-white">
+                            <a href="#about_me" class="hover:text-darkGrayishBlue">About Me</a>
+                        </div>
+
+                        <div class="rounded bg-brightRed text-white">
+                            <a href="#my_projects" class="hover:text-darkGrayishBlue">My Projects</a>
+                        </div>
+
+                        <div class="rounded bg-brightRed text-white">
+                            <a href="#contact_info" class="hover:text-darkGrayishBlue">Contact Me</a>
+                        </div>>
+                    </div>
+                </div>
+            </div>
+        </nav> 
+
+        <!-- Intro Section -->
+        <section id="intro">
+            <!-- Flex Container -->
+            <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
+                <!-- About Me on Left -->
+                <div class="flex flex-col space-y-12 md:w-1/2">
+                    <h2 id="about_me" 
+                    class="max-w-md text-3xl font-bold text-center md:text-left my-5">
+                        About Me
+                    </h2>
+                </div>
+
+                <div>
+                    <p class="max-w-sm text-center md:text-left my-5">
+                        Mechanical Engineer with a diverse experience within the manufacturing world looking 
+                        to branch out into other industries. Currently attending a Full Stack Bootcamp and 
+                        self-studying Python to gain additional software skills. Effective at problem solving 
+                        and working within a cross functional teams to create innovative solutions. Known among 
+                        colleagues to be flexible, organized, and complete work within a timely manner.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Section -->
+        <section id="projects">
+            <!-- Flex Container -->
+            <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
+                    <!-- Projects on the Left -->
+                    <div class="flex flex-col space-y-12 md:w-1/2">
+                        <h2 id="my_projects" 
+                        class="max-w-md text-3xl font-bold text-center md:text-left my-12">
+                            My Projects
+                        </h2>
+                    </div>
+
+                    <div
+                    id="carouselExampleCrossfade"
+                    class="carousel slide carousel-fade relative"
+                    data-bs-ride="carousel">
+                    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex 
+                    justify-center p-0 mb-4">
+                        <button
+                        type="button"
+                        data-bs-target="#carouselExampleCrossfade"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1">
+                        </button>
+                        <button
+                        type="button"
+                        data-bs-target="#carouselExampleCrossfade"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2">
+                        </button>
+                        <button
+                        type="button"
+                        data-bs-target="#carouselExampleCrossfade"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3">
+                        </button>
+                    </div>
+                        <!-- Main Project -->
+                        <div class="carousel-inner relative w-full overflow-hidden">
+                            <div class="carousel-item active w-full">
+                                <a href="https://pillifino.github.io/movie-ish" target="_blank">
+                                    <div class="opacity-100 hover:opacity-50">
+                                        <img
+                                        src="img/movie-ish.png" class="max-w-sm"
+                                        class="block w-full"
+                                        alt="Movie-Ish Project"/>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Code Quiz -->
+                            <div class="carousel-item active w-full">
+                                <a href="https://thelittleone1.github.io/code_quiz/" target="_blank">
+                                    <div class="opacity-100 hover:opacity-50">
+                                        <img
+                                        src="img/code_quiz.png" class="max-w-sm"
+                                        class="block w-full"
+                                        alt="Code Quiz"/>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Weather Widget -->
+                            <div class="carousel-item active w-full">
+                                <a href="https://thelittleone1.github.io/weather_dashboard/" target="_blank">
+                                    <div class="opacity-100 hover:opacity-50">
+                                        <img
+                                        src="img/weather_dashboard.png" class="max-w-sm"
+                                        class="block w-full"
+                                        alt="Weather Dashboard"/>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <button
+                            class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+                            type="button"
+                            data-bs-target="#carouselExampleCrossfade"
+                            data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+                            type="button"
+                            data-bs-target="#carouselExampleCrossfade"
+                            data-bs-slide="next">
+                                <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                                </button>
+                                    </div>
+                        <!-- Main Project Images --> 
+                        <!-- <div class="opacity-100 hover:opacity-50">
+                            <a href="https://pillifino.github.io/movie-ish" target="_blank">
+                                <img src="img/movie-ish.png" class="max-w-sm">
+                            </a>
+                        </div> -->
+
+                        <!-- Side HW Projects (To Be Replaced)
+                        <div class="opacity-100 hover:opacity-50">
+                            <a href="https://thelittleone1.github.io/code_quiz/" target="_blank">
+                                <img src="img/code_quiz.png" class="max-w-sm">
+                            </a>
+                        </div>
+                        <div class="opacity-100 hover:opacity-50">
+                            <a href="https://thelittleone1.github.io/weather_dashboard/" target="_blank">
+                                <img src="img/weather_dashboard.png" class="max-w-sm">
+                            </a>
+                        </div> -->
+                    
+                    
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-veryDarkBlue">
+            <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 
+            md:flex-row md:space-y-0">
+
+                <div class = "flex flex-col-reverse items-center justify-between space-y-12    
+                          md:flex-col md:space-y-0 md:items-start">
+                
+                    <!-- Social Links Container -->
+                    <div class="flex justify-center space-x-10 max-w-sm">
+                        <!-- Link 1 Github -->
+                        <a href="https://github.com/thelittleone1?tab=repositories">
+                            <img src="img/github_icon.png">
+                        </a>
+                
+                        <!-- Link 2 Linkedin -->
+                        <a href="www.linkedin.com/in/qurooj">
+                            <img src="img/linkedin_icon.png">
+                        </a>
+                
+                        <!-- Link 3 Resume -->
+                        <a href="#">
+                            <img src="img/resume2.jpg">
+                        </a>
+                
+                    </div>
+                </div>
+            </div>>
+        </footer>
+
+    </body>
+
+</html>
+
+
+
+                
