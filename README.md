@@ -6,7 +6,9 @@ This is my current Portfolio that displays some of my most recent work as well a
 ### Resources
 
 TailwindCSS: https://tailwindcss.com/
+
 Flexbox: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
 HTML: https://css-tricks.com/html-for-subheadings-and-headings/
 
 ### Portfolio Page
